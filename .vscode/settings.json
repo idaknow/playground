@@ -3,5 +3,9 @@
         "activityBar.background": "#153139",
         "titleBar.activeBackground": "#1D454F",
         "titleBar.activeForeground": "#F9FCFD"
-    }
+    },
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true,
+    },
+    "editor.formatOnSave": true
 }
