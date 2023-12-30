@@ -1,10 +1,9 @@
-
-function App() {
+function Home() {
   return (
-    <p>
-      Home is where the heart is x
-    </p>
+    <>
+      <p>  something about me</p>
+    </>
   );
 }
 
-export default App;
+export default Home;
