@@ -1,8 +1,11 @@
+import theme from '../components/theme';
+import logo from '../img/logo.png';
+
 function Home() {
   return (
-    <>
-      <p>  something about me</p>
-    </>
+    <div style={{ backgroundColor: theme.palette.primary.dark, width: '100vw', height: 'auto' }}>
+      <img src={logo} alt="my cool logo"/>
+    </div>
   );
 }
 
