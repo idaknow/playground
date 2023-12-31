@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.89ba52f4.js",
+    "main.js": "/static/js/main.f6cba08d.js",
     "static/js/787.398c1a46.chunk.js": "/static/js/787.398c1a46.chunk.js",
     "static/media/FULL_STACK_IDA_CV.pdf": "/static/media/FULL_STACK_IDA_CV.3fa522a3d6887a87f447.pdf",
     "static/media/DATA_IDA_CV.pdf": "/static/media/DATA_IDA_CV.badc09f5a12120c853b0.pdf",
+    "static/media/logo.png": "/static/media/logo.2a1544f2514a6d4785b2.png",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.89ba52f4.js.map": "/static/js/main.89ba52f4.js.map",
+    "main.f6cba08d.js.map": "/static/js/main.f6cba08d.js.map",
     "787.398c1a46.chunk.js.map": "/static/js/787.398c1a46.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.89ba52f4.js"
+    "static/js/main.f6cba08d.js"
   ]
 }
