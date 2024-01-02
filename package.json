@@ -1,6 +1,7 @@
 {
   "name": "playground",
   "version": "0.1.0",
+  "homepage": "https://idaknow.github.io/playground/",
   "private": true,
   "dependencies": {
     "@emotion/react": "11.11.3",
