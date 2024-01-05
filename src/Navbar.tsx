@@ -1,11 +1,19 @@
-import EmailIcon from '@mui/icons-material/Email';
 import AppBar from '@mui/material/AppBar';
 import Box from "@mui/material/Box";
-import IconButton from '@mui/material/IconButton';
 import Toolbar from '@mui/material/Toolbar';
-import Tooltip from '@mui/material/Tooltip';
 
+import Button from '@mui/material/Button';
 import CVButton from './components/CVButton';
+import theme from './components/theme';
+import Logo from './img/logo.png';
+
+const logoStyle = {
+  borderWidth: 1,
+  borderRadius: 50,
+  height: '30px',
+  width: '30px',
+  marginRight: '10px'
+};
 
 
 const Navbar = () => {
@@ -13,12 +21,11 @@ const Navbar = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
+          <Button href="#" aria-label="Ida De Smet" sx={{color: theme.palette.primary.dark}}>
+            <img src={Logo} alt='' style={logoStyle} />
+            Ida De Smet
+          </Button>
           <CVButton />
-          <Tooltip title="HIRE ME">
-            <IconButton sx={{ marginRight: "0" }} href="#contact" aria-label="HIRE ME">
-              <EmailIcon/>
-            </IconButton>
-          </Tooltip>
         </Toolbar>
       </AppBar>
     </Box>

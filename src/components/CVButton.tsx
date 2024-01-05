@@ -1,12 +1,12 @@
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 import Tooltip from '@mui/material/Tooltip';
 import { useState } from 'react';
 
 import DataCV from '../cvs/DATA_IDA_CV.pdf';
 import FullStackCV from '../cvs/FULL_STACK_IDA_CV.pdf';
+import FileDownloadMenuItem from './FileDownloadMenuItem';
 
 
 const CVButton = () => {
@@ -43,16 +43,8 @@ const CVButton = () => {
         MenuListProps={{
             'aria-labelledby': 'download-csv-button',
         }}>
-        <MenuItem>
-            <a href={FullStackCV} download='IDA_CV.pdf' target='_blank' rel="noreferrer">
-            Full Stack Software Role
-            </a>
-        </MenuItem>
-        <MenuItem>
-            <a href={DataCV} download='IDA_CV.pdf' target='_blank' rel="noreferrer">
-            Data Engineering Role
-            </a>
-        </MenuItem>
+        <FileDownloadMenuItem name='Full Stack Software Role' href={FullStackCV} doc='IDA_CV.pdf'/>
+        <FileDownloadMenuItem name='Data Engineering Role' href={DataCV} doc='IDA_CV.pdf'/>
         </Menu>
     </>
   )
