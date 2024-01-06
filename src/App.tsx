@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 import theme from "./components/theme";
 import Home from "./routes/Home";
 
-function App() {
+const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
