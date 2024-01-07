@@ -26,14 +26,18 @@ const ExperienceAccordion = ({ experience }: ExperienceProp) => {
     roleDescription,
     icon,
   } = experience;
-  const id = `${company}-${title}-job`;
+  const id = `${company.replace(" ", "-")}-job`;
   const jobDate = end ? `${start} - ${end}` : start;
   const jobText = `${title} @ ${company} | ${jobDate}`;
   const Icon = experienceIcons[icon];
 
   return (
-    <Accordion style={accordionStyle} id={id}>
-      <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls={id}>
+    <Accordion style={accordionStyle}>
+      <AccordionSummary
+        expandIcon={<ExpandMoreIcon />}
+        aria-controls={id}
+        id={id}
+      >
         <InlineIconText text={jobText}>
           <Icon />
         </InlineIconText>
@@ -41,9 +45,14 @@ const ExperienceAccordion = ({ experience }: ExperienceProp) => {
       <AccordionDetails>
         <p style={{ fontStyle: "italic" }}>{companyDescription}</p>
         <List sx={{ listStyleType: "disc", marginLeft: "15px" }}>
-          {roleDescription.map((info) => (
-            <ListItem sx={{ display: "list-item" }}>{info}</ListItem>
-          ))}
+          {roleDescription.map((info, index) => {
+            const key = `${company.replace(" ", "")}-role-description-${index}`;
+            return (
+              <ListItem key={key} sx={{ display: "list-item" }}>
+                {info}
+              </ListItem>
+            );
+          })}
         </List>
       </AccordionDetails>
     </Accordion>
