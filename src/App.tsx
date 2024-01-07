@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
 
-import Navbar from './Navbar';
+import Navbar from "./Navbar";
 import theme from "./components/theme";
 import Home from "./routes/Home";
 
@@ -14,5 +14,5 @@ const App = () => {
       </Routes>
     </ThemeProvider>
   );
-}
+};
 export default App;

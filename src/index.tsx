@@ -1,11 +1,10 @@
-import ReactDOM from 'react-dom/client';
+import ReactDOM from "react-dom/client";
 import { HashRouter as Router } from "react-router-dom";
-import App from './App';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
+import App from "./App";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 
-
-const root = ReactDOM.createRoot(document.getElementById('root') as Element);
+const root = ReactDOM.createRoot(document.getElementById("root") as Element);
 root.render(
   <Router>
     <App />
