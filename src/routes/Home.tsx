@@ -53,6 +53,9 @@ const Home = () => {
               key={experience.company.replace(" ", "-")}
             />
           ))}
+
+          <h1>Education</h1>
+          <p>TODO</p>
         </Grid>
       </Grid>
       <Grid
