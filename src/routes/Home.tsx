@@ -1,11 +1,7 @@
 import Grid from "@mui/material/Grid";
 
-import ExperienceAccordion from "../components/ExperienceAccordion";
-import InlineIconText from "../components/InlineIconText";
+import { Typography } from "@mui/material";
 import theme from "../components/theme";
-import { experiences } from "../cvs/Experiences";
-import { skillIcons, skills } from "../cvs/Skills";
-
 import logo from "../img/logo.png";
 
 const stackBlitzUrl =
@@ -36,26 +32,9 @@ const Home = () => {
           key="ida-cv"
           id="ida-cv"
         >
-          <h1>Skills</h1>
-          {skills.map(({ icon, text, id }) => {
-            const Icon = skillIcons[icon];
-            return (
-              <InlineIconText text={text} key={id}>
-                <Icon />
-              </InlineIconText>
-            );
-          })}
+          <Typography variant="h1">Skills</Typography>
 
-          <h1>Experience</h1>
-          {experiences.map((experience) => (
-            <ExperienceAccordion
-              experience={experience}
-              key={experience.company.replace(" ", "-")}
-            />
-          ))}
-
-          <h1>Education</h1>
-          <p>TODO</p>
+          <Typography variant="h1">Experience</Typography>
         </Grid>
       </Grid>
       <Grid
@@ -66,7 +45,9 @@ const Home = () => {
         }}
       >
         <Grid item xs={12} style={{ margin: "80px" }}>
-          <h1>✨View the code powering this website✨</h1>
+          <Typography variant="h1">
+            ✨View the code powering this website✨
+          </Typography>
           <iframe
             src={stackBlitzUrl}
             title="StackBlitz this website"
