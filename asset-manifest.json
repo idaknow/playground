@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/playground/static/css/main.e6c13ad2.css",
-    "main.js": "/playground/static/js/main.5cc4fb71.js",
+    "main.js": "/playground/static/js/main.8d0efb37.js",
     "static/js/787.398c1a46.chunk.js": "/playground/static/js/787.398c1a46.chunk.js",
+    "static/media/background-1.png": "/playground/static/media/background-1.52dd3f19ac4ed6e5b7fb.png",
     "static/media/IDA_CV.pdf": "/playground/static/media/IDA_CV.fdde3d6a97dff5d91298.pdf",
     "static/media/logo.png": "/playground/static/media/logo.4dfadd001954a86719d5.png",
     "static/media/logo-without-text.png": "/playground/static/media/logo-without-text.9675bda0a77ebe40386d.png",
     "index.html": "/playground/index.html",
     "main.e6c13ad2.css.map": "/playground/static/css/main.e6c13ad2.css.map",
-    "main.5cc4fb71.js.map": "/playground/static/js/main.5cc4fb71.js.map",
+    "main.8d0efb37.js.map": "/playground/static/js/main.8d0efb37.js.map",
     "787.398c1a46.chunk.js.map": "/playground/static/js/787.398c1a46.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.5cc4fb71.js"
+    "static/js/main.8d0efb37.js"
   ]
 }
