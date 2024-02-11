@@ -34,7 +34,6 @@ const Navbar = () => {
     <Box
       sx={{
         flexGrow: 1,
-        marginBottom: "15px",
       }}
     >
       <AppBar position="static" sx={navbarStyle}>
