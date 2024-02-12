@@ -3,7 +3,7 @@ import RocketIcon from "@mui/icons-material/RocketLaunch";
 import Grid from "@mui/material/Grid";
 
 import background from "../img/background-2.png";
-import ColorTypography from "./ColorTypography";
+import { ColorTypography } from "./ColorTypography";
 import { ExperienceContent, ExperienceContentProps } from "./ExperienceContent";
 import { palette } from "./palette";
 

@@ -1,7 +1,7 @@
 import Grid from "@mui/material/Grid";
 
 import { palette } from "../components/palette";
-import ColorTypography from "./ColorTypography";
+import { ColorTypography } from "./ColorTypography";
 
 const stackBlitzUrl =
   "https://stackblitz.com/github/idaknow/playground?title=Idas playground&view=editor";

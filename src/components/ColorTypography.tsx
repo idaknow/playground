@@ -1,4 +1,5 @@
 import Typography from "@mui/material/Typography";
+import { useEffect, useState } from "react";
 import { palette } from "./palette";
 
 type ColorText = {
@@ -12,7 +13,7 @@ type ColorTypographyProps = {
   sx?: Record<string, any>;
 };
 
-const ColorTypography = ({
+export const ColorTypography = ({
   coloredText,
   addEnterAfterEach,
   sx,
@@ -31,4 +32,51 @@ const ColorTypography = ({
   );
 };
 
-export default ColorTypography;
+export const TypewriterColorTypography = ({
+  coloredText,
+  addEnterAfterEach,
+  sx,
+}: ColorTypographyProps) => {
+  const [arrayIndex, setArrayIndex] = useState(0);
+  const [textIndex, setTextIndex] = useState(0);
+  const [newColorText, setNewColorText] = useState<ColorText[]>([]);
+
+  const getNewColorText = (prevColorText: ColorText[]) => {
+    const newText = coloredText[arrayIndex].text[textIndex];
+    if (textIndex === 0) {
+      return [...prevColorText, { ...coloredText[arrayIndex], text: newText }];
+    }
+    const lastElement = prevColorText.pop();
+    return [
+      ...prevColorText,
+      {
+        ...lastElement,
+        text: lastElement ? lastElement.text + newText : "",
+      },
+    ];
+  };
+
+  useEffect(() => {
+    if (arrayIndex < coloredText.length) {
+      const timeout = setTimeout(() => {
+        setNewColorText(getNewColorText);
+
+        if (coloredText[arrayIndex].text.length === textIndex + 1) {
+          setTextIndex(0);
+          setArrayIndex((prevArrayIndex) => prevArrayIndex + 1);
+        } else {
+          setTextIndex((prevTextIndex) => prevTextIndex + 1);
+        }
+      }, 100);
+      return () => clearTimeout(timeout);
+    }
+  });
+
+  return (
+    <ColorTypography
+      coloredText={newColorText}
+      addEnterAfterEach={addEnterAfterEach}
+      sx={sx}
+    />
+  );
+};

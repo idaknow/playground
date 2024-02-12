@@ -4,7 +4,7 @@ import { animated, useSpring } from "@react-spring/web";
 
 import { palette } from "../components/palette";
 import background from "../img/background-1.png";
-import ColorTypography from "./ColorTypography";
+import { TypewriterColorTypography } from "./ColorTypography";
 
 const MainIntroduction = () => {
   const springs = useSpring({
@@ -56,10 +56,10 @@ const MainIntroduction = () => {
           </animated.div>
         </Grid>
         <Grid item xs={8} sx={{ marginTop: "100px" }}>
-          <ColorTypography
+          <TypewriterColorTypography
             coloredText={header}
             addEnterAfterEach={true}
-          ></ColorTypography>
+          />
           <animated.div
             style={{
               width: 80,
