@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import { animated, useSpring } from "@react-spring/web";
 
 import { palette } from "../components/palette";
-import background from "../img/background-1.png";
+// import background from "../img/background-1.png";
 import { TypewriterColorTypography } from "./ColorTypography";
 
 const MainIntroduction = () => {
@@ -35,7 +35,6 @@ const MainIntroduction = () => {
     <div
       style={{
         height: "800px",
-        backgroundImage: `url(${background})`,
         backgroundRepeat: "no-repeat",
         backgroundColor: palette.dark,
       }}

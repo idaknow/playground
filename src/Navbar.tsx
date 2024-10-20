@@ -9,8 +9,8 @@ import Toolbar from "@mui/material/Toolbar";
 import Tooltip from "@mui/material/Tooltip";
 
 import { palette } from "./components/palette";
-import CV from "./cv/IDA_CV.pdf";
-import Logo from "./img/logo-without-text.png";
+// import CV from "./cv/IDA_CV.pdf";
+// import Logo from "./img/logo-without-text.png";
 
 const logoStyle = {
   borderWidth: 1,
@@ -43,7 +43,7 @@ const Navbar = () => {
             aria-label="Ida De Smet"
             sx={{ color: palette.main }}
           >
-            <img src={Logo} alt="" style={logoStyle} />
+            <img src="" alt="" style={logoStyle} />
             Ida De Smet
           </Button>
           <Tooltip title="VIEW THIS SOURCE CODE">
@@ -62,7 +62,7 @@ const Navbar = () => {
             <IconButton
               id="download-csv-button"
               aria-label="DOWNLOAD PDF"
-              href={CV}
+              href="#"
               sx={iconButtonStyle}
             >
               <PictureAsPdfIcon />

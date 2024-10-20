@@ -2,7 +2,7 @@ import RainbowIcon from "@mui/icons-material/Looks";
 import RocketIcon from "@mui/icons-material/RocketLaunch";
 import Grid from "@mui/material/Grid";
 
-import background from "../img/background-2.png";
+// import background from "../img/background-2.png";
 import { ColorTypography } from "./ColorTypography";
 import { ExperienceContent, ExperienceContentProps } from "./ExperienceContent";
 import { palette } from "./palette";
@@ -58,7 +58,6 @@ const Experience = () => {
         objectFit: "cover",
         zIndex: 0,
         backgroundSize: "cover",
-        backgroundImage: `url(${background})`,
         backgroundRepeat: "no-repeat",
         backgroundColor: palette.dark,
       }}
