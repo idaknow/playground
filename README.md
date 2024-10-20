@@ -4,7 +4,16 @@
 
 Welcome to Ida's web development playground. No real purpose except learning, creativity and fun.
 
-Notes to Ida:
+To run locally:
+
+- clone repo: `git clone git@github.com:idaknow/playground.git`
+- go into repo: `cd playground`
+- install packages: `npm install`
+- to run: `npm start`
+
+---
+
+Notes:
 
 - upgrade packages -> works with the upgrades but need to fix deprecations
   https://mui.com/material-ui/migration/migration-v4/
