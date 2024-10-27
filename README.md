@@ -13,7 +13,7 @@ To run locally:
 
 ---
 
-Notes:
+dev notes:
 
-- upgrade packages -> works with the upgrades but need to fix deprecations
-  https://mui.com/material-ui/migration/migration-v4/
+- inject .env to prod
+- deploy to gh pages

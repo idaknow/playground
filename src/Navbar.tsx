@@ -55,6 +55,7 @@ const Navbar = () => {
               target="_blank"
               rel="noreferrer noopener"
               sx={{ ...iconButtonStyle, marginLeft: "auto" }}
+              size="large"
             >
               <LinkIcon />
             </IconButton>
@@ -65,6 +66,7 @@ const Navbar = () => {
               aria-label="DOWNLOAD PDF"
               href={cvUrl}
               sx={iconButtonStyle}
+              size="large"
             >
               <PictureAsPdfIcon />
             </IconButton>
@@ -77,6 +79,7 @@ const Navbar = () => {
               target="_blank"
               rel="noreferrer noopener"
               sx={iconButtonStyle}
+              size="large"
             >
               <LinkedInIcon />
             </IconButton>
