@@ -2,10 +2,11 @@ import RainbowIcon from "@mui/icons-material/Looks";
 import RocketIcon from "@mui/icons-material/RocketLaunch";
 import Grid from "@mui/material/Grid";
 
-// import background from "../img/background-2.png";
 import { ColorTypography } from "./ColorTypography";
 import { ExperienceContent, ExperienceContentProps } from "./ExperienceContent";
 import { palette } from "./palette";
+
+const backgroundUrl = `${process.env.REACT_APP_EXTRAS_URL}/img/background-2.png`;
 
 const iconStyle = {
   color: palette.secondary,
@@ -58,6 +59,7 @@ const Experience = () => {
         objectFit: "cover",
         zIndex: 0,
         backgroundSize: "cover",
+        backgroundImage: `url(${backgroundUrl})`,
         backgroundRepeat: "no-repeat",
         backgroundColor: palette.dark,
       }}

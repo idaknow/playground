@@ -3,8 +3,9 @@ import Grid from "@mui/material/Grid";
 import { animated, useSpring } from "@react-spring/web";
 
 import { palette } from "../components/palette";
-// import background from "../img/background-1.png";
 import { TypewriterColorTypography } from "./ColorTypography";
+
+const backgroundUrl = `${process.env.REACT_APP_EXTRAS_URL}/img/background-1.png`;
 
 const MainIntroduction = () => {
   const springs = useSpring({
@@ -35,6 +36,7 @@ const MainIntroduction = () => {
     <div
       style={{
         height: "800px",
+        backgroundImage: `url(${backgroundUrl})`,
         backgroundRepeat: "no-repeat",
         backgroundColor: palette.dark,
       }}

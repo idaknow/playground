@@ -1,7 +1,8 @@
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-// import background from "../img/background-3.png";
 import { palette } from "./palette";
+
+const backgroundUrl = `${process.env.REACT_APP_EXTRAS_URL}/img/background-1.png`;
 
 const MainText = ({ text }: { text: string }) => {
   return (
@@ -25,6 +26,7 @@ const Proficiency = () => {
       style={{
         height: "100%",
         width: "100%",
+        backgroundImage: `url(${backgroundUrl})`,
         backgroundRepeat: "no-repeat",
         backgroundColor: palette.dark,
       }}

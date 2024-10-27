@@ -9,7 +9,8 @@ import Experience from "../components/Experience";
 import MainIntroduction from "../components/MainIntroduction";
 import Proficiency from "../components/Proficiency";
 import { palette } from "../components/palette";
-// import Logo from "../img/logo-without-text.png";
+
+const logoUrl = `${process.env.REACT_APP_EXTRAS_URL}/img/logo-without-text.png`;
 
 const Home = () => {
   return (
@@ -28,7 +29,11 @@ const Home = () => {
         <BottomNavigationAction
           label="Ida De Smet"
           icon={
-            <img src="" alt="" style={{ height: "1.4rem", width: "1.4rem" }} />
+            <img
+              src={logoUrl}
+              alt=""
+              style={{ height: "1.4rem", width: "1.4rem" }}
+            />
           }
           sx={{ color: palette.secondary }}
           href="#"
