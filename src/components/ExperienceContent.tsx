@@ -21,7 +21,7 @@ export const ExperienceContent = ({
 }: ExperienceContentProps) => {
   return (
     <>
-      <Grid item xs={6}>
+      <Grid size={6}>
         <div
           style={{
             border: `4px solid ${palette.secondary}`,
@@ -31,14 +31,14 @@ export const ExperienceContent = ({
         >
           <div style={{ margin: "20px" }}>
             <Grid container sx={{ marginBottom: "20px" }}>
-              <Grid item xs={9}>
+              <Grid size={9}>
                 <Typography variant="body1">
                   <InlineIconText text={`${company}`}>
                     {children}
                   </InlineIconText>
                 </Typography>
               </Grid>
-              <Grid item xs={3}>
+              <Grid size={3}>
                 <Typography variant="body1" color={palette.main}>
                   {startYear} - {endYear}
                 </Typography>
@@ -52,7 +52,7 @@ export const ExperienceContent = ({
           </div>
         </div>
       </Grid>
-      <Grid item xs={6} />
+      <Grid size={6} />
     </>
   );
 };

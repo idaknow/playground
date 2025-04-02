@@ -42,7 +42,7 @@ const MainIntroduction = () => {
       }}
     >
       <Grid container spacing={2}>
-        <Grid item xs={4}>
+        <Grid size={4}>
           <animated.div
             style={{
               width: 80,
@@ -56,7 +56,7 @@ const MainIntroduction = () => {
             <AutoAwesomeIcon sx={{ color: palette.secondary }} />
           </animated.div>
         </Grid>
-        <Grid item xs={8} sx={{ marginTop: "100px" }}>
+        <Grid size={8} sx={{ marginTop: "100px" }}>
           <TypewriterColorTypography
             coloredText={header}
             addEnterAfterEach={true}

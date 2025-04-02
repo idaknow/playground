@@ -21,7 +21,7 @@ const CodeSource = () => {
           color: palette.main,
         }}
       >
-        <Grid item xs={12} style={{ margin: "80px" }}>
+        <Grid size={12} style={{ margin: "80px" }}>
           <ColorTypography
             coloredText={[
               { text: "View this " },

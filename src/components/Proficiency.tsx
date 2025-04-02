@@ -43,20 +43,20 @@ const Proficiency = () => {
         spacing={2}
         sx={{ paddingTop: "100px", paddingBottom: "200px" }}
       >
-        <Grid item xs={8} />
-        <Grid item xs={4}>
+        <Grid size={8} />
+        <Grid size={4}>
           <ColorText text="* Python" />
           <ColorText text="* Typescript / Javascript" />
           <ColorText text="* React" />
         </Grid>
 
-        <Grid item xs={6} />
-        <Grid item xs={6}>
+        <Grid size={6} />
+        <Grid size={6}>
           <MainText text="and" />
         </Grid>
 
-        <Grid item xs={8} />
-        <Grid item xs={4}>
+        <Grid size={8} />
+        <Grid size={4}>
           <MainText text="* C# .NET" />
           <MainText text="* Postgres" />
           <MainText text="* MongoDB" />
